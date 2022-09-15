@@ -45,15 +45,83 @@ div.cabecalho a{
 }
 
 div.estrofes{
+    padding-top: 30px;
     padding-left: 35px;
-    background-color: lightblue;
-    font-size: 1.5em;
+    background-color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    line-height: 1.7em;
+    height: 700px;
 }
-.fundo{
-    height: 300px;
-    background-image: url('background01.jpg');    
+div.estrofes02{
+    padding-top: 30px;
+    padding-left: 35px;
+    background-color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    line-height: 1.7em;
+    height: 1400px;
+}
+div.estrofes03{
+    padding-top: 30px;
+    padding-left: 35px;
+    background-color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    line-height: 1.7em;
+    height: 1400px;
+}
+div.fundo01{
+    position: relative;
+    min-height: 1000px;
+    background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background001.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
-    background-size: 100% 100%;
-    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left  center ;
+}
+div.texto01{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 35px;
+    height: 700px;
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.541)  ;
+    font-size: 3.5em;
+    line-height: 1.7em;
+    color: white;
+    border-radius: 10px;
+}
+
+.fundo02{
+    position: relative;
+    min-height: 1000px;
+    background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background002.jpg?raw=true');    
+    background-color: rgb(223, 173, 173);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left  center ;
+}
+.texto02{
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    background-color: rgba(0, 0, 0, 0.541)  ;
+    font-size: 3.5em;
+    line-height: 1.7em;
+    color: white;
+}
+
+div.rodape{
+    margin-top: 50px;
+    width: 100%;
+    background-color: black;
+    min-height: 50px;
+
+}
+
+div.rodape > p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.0em;
+
 
 }
