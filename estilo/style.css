@@ -50,10 +50,10 @@ div.estrofes{
     font-size: 1.5em;
 }
 
-.fundo{
+div.fundo01{
     min-height: 300px;
     background-color: rgb(223, 173, 173);
-    background-image: url('imagens/background002.jpg');
+    background-image: url('imagens/background001.jpg');
     
 
 }
