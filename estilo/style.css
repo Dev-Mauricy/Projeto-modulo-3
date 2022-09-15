@@ -55,11 +55,11 @@ div.estrofes{
     font-size: 1.5em;
 }
 
-div.fundo01{
-    background-image: url('imagens/background001.jpg');
+div.fundo{
+    background-image: url('background001.jpg');
     width: 100%;
     min-height: 300px;
-    background-color: lightcoral;
+    background-color: rgb(112, 15, 15);
     
 
 }
