@@ -13,6 +13,10 @@
 margin: 0px;
 }
 
+html,body{
+    min-height: 100vh;
+}
+
 div.cabecalho{
     width: 100%;
     min-height: 300px;
@@ -79,10 +83,10 @@ div.fundo01{
 }
 div.texto01{
     position: absolute;
-    margin-top: 130px;
+    margin-top: 90px;
     margin-left: 35px;
-    height: 700px;
-    width: 650px;
+    min-height: 700px;
+    min-width: 650px;
     background-color: rgba(0, 0, 0, 0.541)  ;
     font-size: 3.5em;
     line-height: 1.7em;
@@ -95,7 +99,7 @@ div.texto01{
     min-height: 1000px;
     background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background002.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-position: left  center ;
 }
