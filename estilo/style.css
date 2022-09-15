@@ -49,8 +49,11 @@ div.estrofes{
     background-color: lightblue;
     font-size: 1.5em;
 }
-#fundo{
-    min-height: 300px;
-    background-image: url('imagens/background001.jpg');    
+.fundo{
+    height: 300px;
+    background-image: url('background01.jpg');    
     background-color: rgb(223, 173, 173);
+    background-size: 100% 100%;
+    background-position: center center;
+
 }
