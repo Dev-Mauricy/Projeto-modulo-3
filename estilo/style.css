@@ -19,62 +19,82 @@ html,body{
 
 div.cabecalho{
     width: 100%;
-    min-height: 300px;
     background-color: black;
 }
 
 div.cabecalho > h1{
-    padding-top:70px;
+    padding-top:30px;
     color: white;
     text-align: center;
+    font-variant: small-caps;
     font-size: 6.5em;
     font-weight: bold;
+    /* --- COLOCAR SOMENTE A PRIMEIRA LETRA MAIUSCULA ---
+       ---- font-variant: small-caps;
+    */
 }
 
-div.cabecalho > h2{
-color: white;
-text-align: center;
-font-size: 2.0em;
-}
 
 div.cabecalho > p{
     color: white;
     text-align: center;
-    font-size: 1.0em;
+    font-size: 3.0em;
+    padding-bottom: 30px;
+    font-weight: bold;
     }
+
 
 div.cabecalho a{
     text-decoration: none;
     color: white;
 }
 
+div.cabecalho a:hover{
+    text-decoration: underline;
+}
+
+.estrofes, .estrofes02, .estrofes03,.fundo01,.fundo02{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
+}
+
 div.estrofes{
+    /*
     padding-top: 30px;
     padding-left: 35px;
+    line-height: 1.7em;
+    */
     background-color: rgb(255, 255, 255);
     font-size: 3.5em;
-    line-height: 1.7em;
-    height: 700px;
+    min-height: 700px;
+    min-width: 300px;
 }
 div.estrofes02{
+    /*
     padding-top: 30px;
     padding-left: 35px;
+    line-height: 1.7em;
+    */
     background-color: rgb(255, 255, 255);
     font-size: 3.5em;
-    line-height: 1.7em;
     height: 1400px;
 }
 div.estrofes03{
+    /*
     padding-top: 30px;
-    padding-left: 35px;
+    padding-left: 35px
+    line-height: 1.7em;
+    */
     background-color: rgb(255, 255, 255);
     font-size: 3.5em;
-    line-height: 1.7em;
     height: 1400px;
 }
 div.fundo01{
     position: relative;
     min-height: 1000px;
+    min-width: 300px;
     background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background001.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
     background-size: cover;
@@ -83,10 +103,10 @@ div.fundo01{
 }
 div.texto01{
     position: absolute;
-    margin-top: 90px;
+    margin-top: 130px;
     margin-left: 35px;
     min-height: 700px;
-    min-width: 650px;
+    min-width: 300px;
     background-color: rgba(0, 0, 0, 0.541)  ;
     font-size: 3.5em;
     line-height: 1.7em;
@@ -99,9 +119,10 @@ div.texto01{
     min-height: 1000px;
     background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background002.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: left  center ;
+    
 }
 .texto02{
     position: absolute;
