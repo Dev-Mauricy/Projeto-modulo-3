@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /*Para importar fonte do Google Font*/
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 /*
 @font-face {
     font-family: '';
@@ -9,12 +19,15 @@
 }
 */
 
+
+
 *{
 margin: 0px;
 }
 
 html,body{
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 div.cabecalho{
@@ -25,11 +38,17 @@ div.cabecalho{
 div.cabecalho > h1{
     padding-top:30px;
     color: white;
+    font-family: var(--fonte2);
     text-align: center;
     font-variant: small-caps;
-    font-size: 6.5em;
+    /* ---- VW - VIEW PORT WIDTH -----
+    Coloca o tamanho da fonte de acordo com o tamanho da
+    tela*/
+    font-size: 10vw;
     font-weight: bold;
-    /* --- COLOCAR SOMENTE A PRIMEIRA LETRA MAIUSCULA ---
+    /* --------  Iniciais maiores (CAPS) --------
+    COLOCA SOMENTE A PRIMEIRA LETRA DE CADA PALAVRA MAIOR
+    MAS TODAS SÃO MAIUSCULAS ---
        ---- font-variant: small-caps;
     */
 }
@@ -38,7 +57,8 @@ div.cabecalho > h1{
 div.cabecalho > p{
     color: white;
     text-align: center;
-    font-size: 3.0em;
+    font-size: 4.5vw;
+    font-family: var(--fonte3);
     padding-bottom: 30px;
     font-weight: bold;
     }
@@ -53,12 +73,7 @@ div.cabecalho a:hover{
     text-decoration: underline;
 }
 
-.estrofes, .estrofes02, .estrofes03,.fundo01,.fundo02{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 5vh;
-    line-height: 1.7em;
-}
+
 
 div.estrofes{
     /*
@@ -67,9 +82,13 @@ div.estrofes{
     line-height: 1.7em;
     */
     background-color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    min-height: 700px;
+    font-size: 4vw;
+    font-family: var(--fonte3);
     min-width: 300px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
 }
 div.estrofes02{
     /*
@@ -78,8 +97,13 @@ div.estrofes02{
     line-height: 1.7em;
     */
     background-color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    height: 1400px;
+    font-size: 4vw;
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
+
 }
 div.estrofes03{
     /*
@@ -88,57 +112,76 @@ div.estrofes03{
     line-height: 1.7em;
     */
     background-color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    height: 1400px;
+    font-size: 4vw;
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
+
 }
 div.fundo01{
-    position: relative;
-    min-height: 1000px;
-    min-width: 300px;
+    
     background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background001.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
     background-size: cover;
     background-attachment: fixed;
-    background-position: left  center ;
+    background-position: left center ;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
 }
 div.texto01{
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 35px;
-    min-height: 700px;
-    min-width: 300px;
+    /*Por ser inline-block ela se ajusta a pagina, 
+    se fosse um box-level, ela ocuparia por padrão toda a
+    largura da página*/
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.541)  ;
-    font-size: 3.5em;
+    font-size: 4vw;
+    font-family: var(--fonte3);
     line-height: 1.7em;
     color: white;
     border-radius: 10px;
+    line-height: 1.7em;
+    
+    
 }
 
-.fundo02{
-    position: relative;
-    min-height: 1000px;
+div.fundo02{
     background-image: url('https://github.com/professorguanabara/projeto-cordel/blob/master/imagens/background002.jpg?raw=true');    
     background-color: rgb(223, 173, 173);
     background-size: cover;
     background-attachment: fixed;
     background-position: left  center ;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    line-height: 1.7em;
     
 }
 .texto02{
-    position: absolute;
-    top: 170px;
-    left: 40px;
+    /*Por ser inline-block ela se ajusta a pagina, 
+    se fosse um box-level, ela ocuparia por padrão toda a
+    largura da página*/
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.541)  ;
-    font-size: 3.5em;
+    font-size: 4vw;
     line-height: 1.7em;
     color: white;
+    font-family: var(--fonte3);
+    border-radius: 10px;
+    padding: 10px;
+
+
 }
 
 div.rodape{
-    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     background-color: black;
-    min-height: 50px;
 
 }
 
@@ -146,7 +189,7 @@ div.rodape > p{
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 2.0em;
+    font-size: 2.5vw;
 
 
 }
