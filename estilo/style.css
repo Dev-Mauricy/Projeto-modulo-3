@@ -126,21 +126,27 @@ div.fundo01{
     background-color: rgb(223, 173, 173);
     background-size: cover;
     background-attachment: fixed;
-    background-position: left center ;
+    background-position: right center ;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 5vh;
     line-height: 1.7em;
 }
-div.texto01{
+div.texto01 > p{
     /*Por ser inline-block ela se ajusta a pagina, 
     se fosse um box-level, ela ocuparia por padrão toda a
     largura da página*/
     display: inline-block;
+    text-shadow: 2px 2px 0px black;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.541)  ;
     font-size: 4vw;
     font-family: var(--fonte3);
+    /* 1px - vertical
+       1px - lateral
+       0px - espalhamento
+       0px - ampliação*/
     line-height: 1.7em;
     color: white;
     border-radius: 10px;
@@ -154,7 +160,7 @@ div.fundo02{
     background-color: rgb(223, 173, 173);
     background-size: cover;
     background-attachment: fixed;
-    background-position: left  center ;
+    background-position: right  center ;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 5vh;
@@ -168,6 +174,7 @@ div.fundo02{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.541)  ;
     font-size: 4vw;
+    text-shadow: 2px 2px 0px black; 
     line-height: 1.7em;
     color: white;
     font-family: var(--fonte3);
